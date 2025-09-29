@@ -1,0 +1,246 @@
+*{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+body {
+  margin: 0;
+  background: white;
+}
+
+.header {
+  text-align: center;
+  padding: 40px;
+  background: #001f3f;
+  color: white;
+}
+
+.logo {
+  width: 100px;
+  border-radius: 100px;
+  text-align: left;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: var(--lightblue);
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 30px;
+}
+
+.contact-form, .contact-info {
+  flex: 1;
+  background: lightgrey;
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+}
+
+.contact-form h2, .contact-info h2 {
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* Separated the input field and the text area and i proceeded to adjust them differently */
+
+.contact-form input{
+  font-size: large;
+  width: 90%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid var(--navy);
+  border-radius: 5px;
+} 
+
+.contact-form textarea {
+  font-size: large;
+  width: 90%;
+  height: 150px;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid var(--navy);
+  border-radius: 5px;
+}
+
+.contact-form button {
+  width: 20%;
+  background: var(--lightblue);
+  color: var(--cream);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background: var(--navy);
+}
+
+.map {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+/* Added iFrame adjustments to make the map smaller */
+iframe{
+  width: 90% ;
+  height: 300px;
+}
+
+.faq {
+  background: lightgrey;
+  padding: 40px;
+  margin: 40px;
+  border-radius: 10px;
+  color: var(--cream);
+}
+
+.faq h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: black;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0;
+  background: var(--cream);
+  color: var(--navy);
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.faq-question:hover {
+    background: var(--lightblue);
+    color: var(--navy);
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px;
+  background: #001f3f;
+  border-left: 3px solid #001f3f;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.footer {
+  background: #001f3f;
+  padding: 20px;
+  text-align: center;
+  color: var(--cream);
+}
+
+:root {
+    --navy: #001f54;
+    --taupe: #8b8589;
+    --cream: #fdf6e3;
+    --lightblue: #5dade2;
+}
+
+#chat-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--lightblue);
+  color: black;
+  border: none;
+  padding: 14px 18px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#chat-box {
+  display: none;
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  width: 350px;
+  max-height: 480px;
+  background: lightgrey;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+  z-index: 1000;
+  border: 1px solid black;
+  font-family: arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+#chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#options-container {
+  padding: 10px;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  border-top: 1px solid #ccc;
+}
+
+.option-btn {
+  background: var(--lightblue);
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.bot-message {
+  background: #001f3f;
+  color: var(--cream);
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.user-message {
+  background: var(--lightblue);
+  color: black;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  max-width: 80%;
+  align-self: flex-end;
+  word-wrap: break-word;
+}
+/* Added soome padding to the logos to neaten it up*/
+i{
+    padding-right: 10px;
+}
+/* Adding som estyling to the links so they look less like links and more like thieir part of the page */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blue;
+    text-decoration: underline;
+    
+}
