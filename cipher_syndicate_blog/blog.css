@@ -1,0 +1,67 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fdf6e3;
+    background-size: cover;
+}
+
+
+
+.box{
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    border: solid 3px black;
+}
+
+#box1{
+    float: left;
+}
+
+#img{
+    float: left;
+    width: 20%;
+    height: 20%;
+    border: solid 2px black;
+}
+
+#uh{
+    width: 20%;
+    height: 20%;
+    float: left;
+    border: solid 2px black;
+}
+
+.team-section{
+    text-align: center;
+    padding: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.team-section h1{
+    text-align: center;
+}
+
+.person-card{
+    border: ease-out 4px lightgrey;
+    box-shadow: 0 5px 10px black;
+    margin: 20px auto;
+    padding: 20px;
+    width: 40%;
+    background-color: lightgray;
+    overflow: auto;
+}
+
+#testimonial{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.person-card #icon{
+    background-color: #5dade2;
+}

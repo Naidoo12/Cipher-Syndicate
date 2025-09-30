@@ -1,0 +1,307 @@
+
+*{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--deepnavy);
+}
+
+.header {
+  text-align: center;
+  padding: 100px 40px 40px;
+  background: var(--deepnavy);
+  color: white;
+}
+
+.logo {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: var(--lightblue);
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 30px;
+}
+
+
+.contact-form, .contact-info {
+  flex: 1;
+  background: lightgrey;
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+}
+
+
+.contact-form h2, .contact-info h2 {
+  margin-bottom: 20px;
+  color: black;
+}
+
+.contact-info i{
+    font-size: x-large;
+}
+
+.contact-form input {
+  width: 95%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid var(--deepnavy);
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  width: 95%;
+  height: 200px;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid var(--deepnavy);
+  border-radius: 5px;
+  resize: vertical;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background: var(--deepnavy);
+  color: var(--cream);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background: var(--lightblue);
+}
+
+.map {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.faq {
+  background: lightgrey;
+  padding: 40px;
+  margin: 40px;
+  border-radius: 10px;
+  color: var(--cream);
+}
+
+.faq h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: black;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0;
+  background: var(--cream);
+  color: var(--deepnavy);
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.faq-question:hover {
+    background: var(--lightblue);
+    color: var(--deepnavy);
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px;
+  background: var(--deepnavy);
+  border-left: 3px solid var(--deepnavy);
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.footer {
+  background: var(--deepnavy);
+  padding: 20px;
+  text-align: center;
+  color: var(--cream);
+}
+
+:root {
+    --deepnavy: #001f3f;
+    --taupe: #8b8589;
+    --cream: #fdf6e3;
+    --lightblue: #5dade2;
+}
+
+#chat-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--lightblue);
+  color: black;
+  border: none;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:10px;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 1000;
+}
+#chat-btn i {
+  padding-left: 15px;
+  padding-right: 20px;
+}
+
+#chat-box {
+  display: none;
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  width: 350px;
+  max-height: 480px;
+  background: lightgrey;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+  z-index: 1000;
+  border: 1px solid black;
+  font-family: arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+#chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#options-container {
+  padding: 10px;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  border-top: 1px solid #ccc;
+}
+
+.option-btn {
+  background: var(--lightblue);
+  color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.bot-message {
+  background: var(--deepnavy);
+  color: var(--cream);
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.user-message {
+  background: var(--lightblue);
+  color: black;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  max-width: 80%;
+  align-self: flex-end;
+  word-wrap: break-word;
+}
+/* Added soome padding to the logos to neaten it up*/
+i{
+    padding-right: 10px;
+}
+/* Adding som estyling to the links so they look less like links and more like thieir part of the page */
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blue;
+    text-decoration: underline;
+    
+}
+
+.bot-message a {
+  color: #5dade2;          
+  text-decoration: none;  
+}
+
+.bot-message a:hover {
+  color: #5dade2;             
+  text-decoration: underline;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #001f3f;
+  padding: 10px 60px;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  padding-right: 150px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px 60px;
+  margin: 0;
+  padding: 0;
+  margin-right: 150px;
+}
+
+nav ul li a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--lightblue);
+}
