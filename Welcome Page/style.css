@@ -1,0 +1,146 @@
+.logo img {
+    width: 100px;   
+    height: auto;
+    border-radius: 50%;
+    
+}
+
+.logo{
+    margin-right: 350px;
+    display: flex;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    left: 0;
+    align-items: center;
+    padding: 20px;        
+    background: transparent; 
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    background-color: #000f3f; 
+    padding: 20px 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    gap: 40px;
+    align-items: center;
+    
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px 60px; 
+    margin: 0 0 0 100px;
+    padding: 0;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    display: flex;              
+    align-items: center;
+    gap: 6px;            
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover{
+    color: grey;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.CP{
+    height: 100vh;
+    display: flex;
+    background-image: url('image6.jpg');
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.CP h1{
+    color: black;
+    font-size: 53px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.CP h2{
+    color: black;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.CP p{
+    color: black;
+    font-size: 18px;
+    margin: 10px auto;
+    line-height: 1.6;
+    max-width: 880px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.CP .btn{
+    display: flex;
+    padding: 12px 20px;
+    background-color: #000f3f;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+
+p{
+    color: white;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.footer {
+    background: #001f3f;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+
