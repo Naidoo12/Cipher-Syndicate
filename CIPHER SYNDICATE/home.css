@@ -1,0 +1,95 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    background-color: #fdfcf8;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 10px 60px ;
+  width: 100%;
+  box-sizing: border-box;
+text-align: right;
+  background-color: #001f54;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+
+header {
+    text-align: center;    
+}
+
+img{height: 110px;
+    width: 110px;
+padding-right: 529px;
+margin-top: -80px;
+margin-right: 600px;
+
+}
+
+
+
+header h1 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #001f54;
+    margin-left: 25px;
+    
+}
+
+header p {
+    margin-top: -30px;
+    font-size: 20px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ; ;
+    color: #555;
+}
+
+/* Main Content */
+main {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    font-style: italic;
+}
+
+main h2 {
+    color: #222;
+}
+
+main p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #001f54;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
