@@ -8,6 +8,25 @@ body{
     background-color: antiquewhite;
 }
 
+.header {
+  text-align: center;
+  padding: 100px 40px 40px;
+  background: #000f3f;
+  color: white;
+}
+
+.logo img {
+    width: 100px;   
+    height: auto;
+    border-radius: 50%;
+    
+}
+
+.logo{
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
 
 #text{
     margin-right: 120px;
