@@ -8,13 +8,6 @@ body{
     background-color: antiquewhite;
 }
 
-header{
-    text-align: center;
-    padding: 40px;
-    background-color: #001f54;
-    box-sizing: border-box;
-    color: white;
-}
 
 #text{
     margin-right: 120px;
