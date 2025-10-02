@@ -5,7 +5,18 @@
 
 body{
     margin: 0px;
-    background-color: antiquewhite;
+    background-color: #fdf6e2;
+}
+
+.intro{
+    text-align: center;
+}
+
+.hr{
+    border: none;
+    border-top: 1px solid #000f3f;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .header {
@@ -42,6 +53,7 @@ body{
 .img{
     width: 100px;
     border-radius: 50%;
+    
 }
 
 .image{
