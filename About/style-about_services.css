@@ -1,0 +1,362 @@
+.logo{
+  float: left;
+  height: 150px;
+  border-radius: 70px;
+  margin-left: 50px;
+}
+
+.aboutAll{
+  justify-content: center;
+  display: flex;
+}
+.aboutPicture{
+  height: 350px;
+  width: auto;
+  border-radius: 24px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.aboutPicture:hover{
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+.aboutText{
+  flex: 1;
+}
+main p.about{
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.6;
+}
+.aboutbox{
+  display: flex;
+  /*border:2px solid navy;*/
+  background: lightgrey;
+  border-radius: 0px;
+  margin: 40px;
+  padding: 20px;
+  align-items: stretch;
+}
+.mv{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.mv-section{
+  padding: 20px;
+  flex: 1;
+}
+.mv-section h1{
+  text-align: center;
+  margin-bottom: 15px;
+}
+.mv-section.vision{
+  padding-top: 80px;
+  text-align: center;
+  border-left: 2px solid #f5f5dc ;
+}
+main h1.m1{font-size: 32px;
+  text-align: center;
+  position: relative;
+
+}
+.m1::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: #f5f5dc;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+.m1:hover::after {
+  width: 100%;
+}
+.mv-section.vision h1{
+  margin-top: -40px;
+}
+
+.values{
+  text-align: center;
+  padding: 60px 20px;
+}
+.values h2{
+  font-size: 32px;
+  margin-bottom: 28px;
+}
+.values-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.value-item{
+  background-color: lightgrey;
+  color: black;
+  padding: 30px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+  min-height: 180px;
+  box-sizing: border-box;
+}
+.value-item:hover{
+  min-height: 240px;
+  transform: scale(1.05);
+  background: #8b8589;/* switched the colour around(background and hover)*/
+  box-shadow: 0 12px 30px rgba(0,0,0,0.28);
+}
+
+.value-item:hover p{
+  opacity: 1;
+}
+.value-item i{
+  display: block;
+  font-size: 36px;
+  margin-bottom: 12px;
+  color: rgb(99, 202, 236);
+}
+.value-item h3{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.value-item p{
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.8;
+  margin: 0;
+}
+.performanceMetrics{
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.metrics{
+  min-width: 200px;
+}
+.icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.icon i{
+  font-size: 50px;
+  margin-bottom: 35px;
+  color:  rgb(99, 202, 236);
+}
+.icon h2{
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+}
+.metrics p{
+  margin-top: 8px;
+  font-size: 18px;
+  color: black;
+}
+.top{display: flex;}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #001f3f;
+    color: #f5f5dc;
+}
+
+
+
+header h1 {
+  padding-top: 50px;
+    margin: 0;
+    font-size: 2.8rem;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #dcdcbc;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.service-btn {
+    background-color: #f5f5dc; 
+    color: #001f3f; 
+    border: none;
+    padding: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.service-btn:hover {
+    background-color: #8b8589;
+    transform: translateY(-5px);
+}
+
+#service-info {
+    display: none;
+    margin: 50px auto;
+    max-width: 900px;
+    background-color: #8b8589;
+    color: black;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+#service-info h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: black;
+    border: none;
+}
+
+#service-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.close-btn {
+    background-color: #001f3f;
+    color: #f5f5dc;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-btn:hover {
+    background-color: #003366;
+}
+
+footer {
+    background-color: #001533;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background: #fdf6e3; 
+  margin: 0;
+  padding: 0;
+  color:black;
+}
+
+
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.services-btn {
+  padding: 20px;
+  border: none;
+  border-radius: 12px;
+  background: #8b8589;
+  color: beige;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.services-btn:hover {
+  background: #8b8589;
+  color: #001f3f;
+  transform: scale(1.05);
+}
+
+#service-info h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#service-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+#service-info .close-btn{
+  display: block;
+  margin: 20px auto 0;
+}
+.close-btn {
+  background-color: #001f3f;
+  color: #f5f5dc;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close-btn:hover {
+  background-color: #003366;
+}
+
+footer{
+  text-align: center;
+  background-color: #001f3f;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+  color: white;
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(25px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
