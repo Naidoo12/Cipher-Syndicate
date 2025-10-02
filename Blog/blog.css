@@ -5,10 +5,39 @@
 
 body{
     margin: 0px;
-    background-color: antiquewhite;
+    background-color: #fdf6e2;
 }
 
+.intro{
+    text-align: center;
+}
 
+.hr{
+    border: none;
+    border-top: 1px solid #000f3f;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.header {
+  text-align: center;
+  padding: 100px 40px 40px;
+  background: #000f3f;
+  color: white;
+}
+
+.logo img {
+    width: 100px;   
+    height: auto;
+    border-radius: 50%;
+    
+}
+
+.logo{
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
 
 #text{
     margin-right: 120px;
@@ -24,6 +53,7 @@ body{
 .img{
     width: 100px;
     border-radius: 50%;
+    
 }
 
 .image{
