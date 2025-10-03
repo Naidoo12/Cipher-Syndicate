@@ -78,6 +78,7 @@ body{
     flex-wrap: wrap;
     align-content: space-evenly;
     gap: 1em;
+    justify-content: center;
 
 }
 
