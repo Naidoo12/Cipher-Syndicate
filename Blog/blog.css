@@ -83,6 +83,18 @@ body{
 
 }
 
+.btn{
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: lightgray;
+    box-shadow: 0 5px 10px black;
+}
+
+.btn:hover{
+    background-color: white;
+    scale: 1.1;
+}
+
 .item {
     float: left;
     width: 20%;
