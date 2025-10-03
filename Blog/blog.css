@@ -34,7 +34,8 @@ body{
 }
 
 .logo{
-    margin-right: auto;
+    margin-left: 20px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
 }
