@@ -27,12 +27,15 @@ body{
 .about{
     text-align: center;
     font-size: large;
-    background-color: rgba(145, 158, 167,0.5);
+    background-color: rgba(145, 158, 167,0.9);
     height: 30vh;
     width: 70%;
     border: black 1px solid;
     border-radius: 50px;
     margin-bottom: 0px;
+}
+.about,.contact-us,.services {
+    backdrop-filter: blur(10px);
 }
 .group{
     display: flex;
@@ -43,7 +46,7 @@ body{
 .services{
     text-align: center;
     font-size: large;
-    background-color: rgba(145, 158, 167,0.5);
+    background-color: rgba(145, 158, 167,0.9);
     height: 40vh;
     width: 45%; 
     border: black 1px solid;
@@ -71,7 +74,7 @@ body{
 .contact-us{
     text-align: center;
     font-size: large;
-    background-color: rgba(145, 158, 167,0.5);
+    background-color: rgba(145, 158, 167,0.9);
     height: 40vh;
     width: 45%;
     border-radius: 50px;
@@ -105,10 +108,11 @@ footer {
 
 
 video{
-    opacity: 10%;
+    opacity: 100%;
     position: fixed;
     min-height: 100%;
     min-width: 100%;
     z-index: -1;
+    filter: brightness(0.7);
 
 }
