@@ -1,10 +1,16 @@
-.logo{
-  float: left;
-  height: 150px;
-  border-radius: 70px;
-  margin-left: 50px;
+.logo img {
+    width: 100px;   
+    height: auto;
+    border-radius: 50%;
+    
 }
 
+.logo{
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
 .aboutAll{
   justify-content: center;
   display: flex;
