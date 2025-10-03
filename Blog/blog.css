@@ -85,6 +85,18 @@ nav ul li a:hover {
     border-radius: 50%;
 }
 
+button{
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: lightgray;
+    box-shadow: 0 5px 10px black;
+}
+
+button:hover{
+    background-color: white;
+    scale: 1.1;
+    cursor: pointer;
+}
 
 .testimonial-container {
     display: flex;         /*I added this so the horizontal scroll works (without display: flex) the testimonials stacked vertically by default.*/  
