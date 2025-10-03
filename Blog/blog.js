@@ -1,37 +1,45 @@
-document.addEventListener('DOMContentLoaded', function(){
-    const container = document.querySelector(".container");
-    container.innerHTML+=container.innerHTML;
+document.addEventListener('DOMContentLoaded', function() {
+    const profileContainer = document.querySelector(".container");
 
-    let scrollAmount = 0;
-    const scrollSpeed = 1.8;
+    
+    profileContainer.innerHTML += profileContainer.innerHTML; //Here i fixed the duplicate profiles so that there can be an infinite scrolling effect
 
-    function autoScroll(){
-        scrollAmount+=scrollSpeed;
-        container.scrollLeft = scrollAmount;
+    let profileScroll = 0;           //here i also fixed so there can be separate variables for the profiles
+    const profileSpeed = 1.8;
 
-        if(container.scrollLeft >= container.scrollWidth /2){
-            scrollAmount = 0;
+    function scrollProfiles() {
+        profileScroll += profileSpeed;
+        profileContainer.scrollLeft = profileScroll;
+
+        if(profileContainer.scrollLeft >= profileContainer.scrollWidth / 2) {    //this is to make sure that it reset the scrolling when it is reaching the middle
+            profileScroll = 0;
         }
-        requestAnimationFrame(autoScroll);
+
+        requestAnimationFrame(scrollProfiles);
     }
-    authoScroll();
-});
 
-document.addEventListener("DOMContentLoaded", function(){
-    const container = document.querySelector(".testimonial-container");
-    container.innerHTML += container.innerHTML;
+    scrollProfiles();
 
-    let scrollAmount = 0;
-    const scrollSpeed = 0.8;
+    
+    const testimonialContainer = document.querySelector(".testimonial-container");   
 
-    function autoScroll(){
-        scrollAmount += scrollSpeed;
-        container.scrollLeft = scrollAmount;
+    
+    testimonialContainer.innerHTML += testimonialContainer.innerHTML;      //here same thing as the profile container
 
-        if(container.scrollLeft>= container.scrollWidth /2){
-            scrollAmount = 0;
+    let testimonialScroll = 0;      //same thing here like the  profile scroll
+    const testimonialSpeed = 1.8;
+
+    function scrollTestimonials() {
+        testimonialScroll += testimonialSpeed;
+        testimonialContainer.scrollLeft = testimonialScroll;
+
+        
+        if(testimonialContainer.scrollLeft >= testimonialContainer.scrollWidth / 2) {   //here same thing as i mentioned in the profile
+            testimonialScroll = 0;
         }
-        requestAnimationFrame(autoScroll);
+
+        requestAnimationFrame(scrollTestimonials);
     }
-    authoScroll();
+
+    scrollTestimonials();
 });
