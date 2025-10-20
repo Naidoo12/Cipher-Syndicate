@@ -1,19 +1,6 @@
-.logo img {
-    width: 100px;   
-    height: auto;
-    border-radius: 50%;
-    
-}
 
-.logo{
-    margin-right: 350px;
-    display: flex;
-    align-items: center;
-}
 
-img{
-    float: left;
-}
+
 header{
     display: flex;
     position: absolute;
@@ -31,31 +18,34 @@ header{
 .CP{
     height: 100vh;
     display: flex;
-    background-image: url('/Welcome page/images/image6.jpg');
+    background-image: url('/Welcome page/images/hands1.jpg');
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .CP h1{
-    color: black;
-    font-size: 53px;
+    color: white;
+    font-size: 60px;
+    margin-top: -150px;
+    padding-bottom: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .CP h2{
-    color: black;
-    font-size: 18px;
+    color: white;
+    font-size: 28px;
+    padding-bottom: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .CP p{
-    color: black;
-    font-size: 18px;
+    color: white;
+    font-size: 23px;
     margin: 10px auto;
     line-height: 1.6;
     max-width: 880px;
@@ -65,7 +55,8 @@ header{
 
 .CP .btn{
     display: flex;
-    padding: 12px 20px;
+    font-size: large;
+    padding: 18px 20px;
     background-color: #000f3f;
     color: white;
     border-radius: 10px;

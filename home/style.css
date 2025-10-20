@@ -1,25 +1,14 @@
 body{ 
     margin: 0px;
 }
-.logo img {
-    width: 100px;   
-    height: auto;
-    border-radius: 50%;
-    
-}
-
-.logo{
-    margin-left: 20px;
-    margin-top: 10px;
-    display: flex;
-    
+h2{
+    padding-top: 25px;
 }
 .container{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
     height: 100vh;
     width: 100%;
 }
@@ -58,7 +47,7 @@ body{
     color: #ffff;
     border-radius: 50px;
     font-size: large;
-    margin-top: 20px;
+    margin-top: 30px;
     height: 20%;
     width: 40%;
 }
@@ -86,7 +75,7 @@ body{
     color: #ffff;
     border-radius: 50px;
     font-size: large;
-    margin-top: 20px;
+    margin-top: 30px;
     height: 20%;
     width: 40%;
 }

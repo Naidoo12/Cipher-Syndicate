@@ -1,10 +1,3 @@
-* {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background-color: antiquewhite;
 }
@@ -17,10 +10,7 @@ body {
     color: white;
 }
 
-.logo img {
-    width: 100px;
-    border-radius: 50%;
-}
+
 
 .intro{
     text-align: center;
@@ -45,17 +35,11 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: white;
-    padding: 10px 20px;
     display: inline-block;
 }
 
-nav ul li a:hover {
-    background-color: #001f54;
-    border-radius: 5px;
-}
-.icon{
-    padding: 10px;
-}
+
+
 
 .container {
     display: flex;     /*This is the horizontal layout*/      
@@ -64,7 +48,7 @@ nav ul li a:hover {
     overflow-x: hidden;      /* i had noticed that in the testimonials there was a scrollbar, so i made the scrollbar hidden*/
     padding: 20px;
     width: 100%;
-    background-image: url("images/Images/logo.jpg"); 
+    background-color: var(--deepnavy);
 }
 
 .item {
@@ -112,7 +96,7 @@ button:hover{
     overflow-x: hidden;    /*and also same story as the display: flex */  
     padding: 50px;
     width: 100%;
-    background-image: url(images/Images/logo.jpg);
+    background-color: var(--deepnavy);
     box-sizing: border-box;
     margin-bottom: 80px;
 }
@@ -141,7 +125,7 @@ footer {
     display: block;
     clear: both;
     width: 100%;
-    background-color: #001f54;
+    background-color: var(--deepnavy);
     padding: 20px;
     text-align: center;
     color: #fdf6e2;

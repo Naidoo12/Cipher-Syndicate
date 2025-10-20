@@ -1,16 +1,4 @@
-.logo img {
-    width: 100px;   
-    height: auto;
-    border-radius: 50%;
-    
-}
 
-.logo{
-    margin-left: 20px;
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-}
 .aboutAll{
   justify-content: center;
   display: flex;
@@ -180,17 +168,6 @@ body {
 
 
 
-header h1 {
-  padding-top: 50px;
-    margin: 0;
-    font-size: 2.8rem;
-}
-
-header p {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    color: #dcdcbc;
-}
 
 .services-container {
     display: grid;
