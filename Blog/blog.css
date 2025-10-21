@@ -44,12 +44,15 @@ nav ul li a {
 .container {
     display: flex;     /*This is the horizontal layout*/      
     gap: 20px;
+    overflow: hidden;
     flex-wrap: nowrap;       /*This will prevent the wrapping*/
     overflow-x: hidden;      /* i had noticed that in the testimonials there was a scrollbar, so i made the scrollbar hidden*/
+    white-space: nowrap;
     padding: 20px;
     width: 100%;
-    background-color: var(--deepnavy);
+    background-image: url(/logo.jpg);
 }
+
 
 .item {
     flex: 0 0 auto;          
@@ -68,8 +71,9 @@ nav ul li a {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* stronger shadow */
     background-color: lightblue;
-   
+    animation-play-state: paused;
 }
+
 .image img.sigh {
     width: 150px;
     border-radius: 50%;
@@ -96,7 +100,7 @@ button:hover{
     overflow-x: hidden;    /*and also same story as the display: flex */  
     padding: 50px;
     width: 100%;
-    background-color: var(--deepnavy);
+    background-image: url(/logo.jpg);
     box-sizing: border-box;
     margin-bottom: 80px;
 }

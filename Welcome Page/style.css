@@ -1,5 +1,12 @@
-
-
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Keep it behind text */
+  }
 
 header{
     display: flex;
@@ -16,9 +23,10 @@ header{
 
 
 .CP{
-    height: 100vh;
-    display: flex;
-    background-image: url('/Welcome page/images/hands1.jpg');
+    padding-top: 100px;
+    height: 72.5vh;
+    display: flex;/*
+    background-image: url('/Welcome page/images/hands1.jpg');*/
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -31,7 +39,8 @@ header{
 .CP h1{
     color: white;
     font-size: 60px;
-    margin-top: -150px;
+    margin-top: -70px;
+    padding-top: 50px;
     padding-bottom: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -47,6 +56,7 @@ header{
     color: white;
     font-size: 23px;
     margin: 10px auto;
+    padding-bottom: 10px;
     line-height: 1.6;
     max-width: 880px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
