@@ -18,7 +18,7 @@ body {
 
 .hr{
     border: none;
-    border-top: solid 1px #001f54;
+    border-top: solid 1px #000f3f;
     margin-left: 20px;
     height: 10px;
     color: blue;
@@ -48,7 +48,7 @@ nav ul li a {
     overflow-x: hidden;      /* i had noticed that in the testimonials there was a scrollbar, so i made the scrollbar hidden*/
     padding: 20px;
     width: 100%;
-    background-color: var(--deepnavy);
+    background-color: #000f3f;
 }
 
 .item {
@@ -96,7 +96,7 @@ button:hover{
     overflow-x: hidden;    /*and also same story as the display: flex */  
     padding: 50px;
     width: 100%;
-    background-color: var(--deepnavy);
+    background-color: #000f3f;
     box-sizing: border-box;
     margin-bottom: 80px;
 }
@@ -125,7 +125,7 @@ footer {
     display: block;
     clear: both;
     width: 100%;
-    background-color: var(--deepnavy);
+    background-color: #000f3f;
     padding: 20px;
     text-align: center;
     color: #fdf6e2;
