@@ -3,6 +3,7 @@ body{
 }
 h2{
     padding-top: 25px;
+    padding-bottom: 20px;
 }
 .container{
     display: flex;
@@ -16,7 +17,7 @@ h2{
 .about{
     text-align: center;
     font-size: large;
-    background-color: rgba(145, 158, 167,0.9);
+    background-color: rgba(145, 158, 167,0.5);
     height: 30vh;
     width: 70%;
     border: black 1px solid;
@@ -35,7 +36,7 @@ h2{
 .services{
     text-align: center;
     font-size: large;
-    background-color: rgba(145, 158, 167,0.9);
+    background-color: rgba(145, 158, 167,0.5);
     height: 40vh;
     width: 45%; 
     border: black 1px solid;
@@ -63,7 +64,7 @@ h2{
 .contact-us{
     text-align: center;
     font-size: large;
-    background-color: rgba(145, 158, 167,0.9);
+    background-color: rgba(145, 158, 167,0.5);
     height: 40vh;
     width: 45%;
     border-radius: 50px;
@@ -88,7 +89,7 @@ p{
 }
 
 footer {
-    background: #001f3f;
+    background: #000f3f;
     padding: 20px;
     text-align: center;
     color: white;
