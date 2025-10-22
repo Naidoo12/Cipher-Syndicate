@@ -1,24 +1,18 @@
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Keep it behind text */
+  }
 
-
-
-header{
-    display: flex;
-    position: absolute;
-    justify-content: space-between;
-    width: 100%;
-    top: 0;
-    left: 0;
-    align-items: center;
-    padding: 20px;        
-    background: transparent; 
-    z-index: 10;
-}
 
 
 .CP{
-    height: 100vh;
+    height: 74vh;
     display: flex;
-    background-image: url('/Welcome page/images/hands1.jpg');
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -31,15 +25,15 @@ header{
 .CP h1{
     color: white;
     font-size: 60px;
-    margin-top: -150px;
-    padding-bottom: 20px;
+    margin-top: 0px;
+    padding-bottom: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .CP h2{
     color: white;
     font-size: 28px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -50,7 +44,7 @@ header{
     line-height: 1.6;
     max-width: 880px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
+    padding-bottom: 20px;
 }
 
 .CP .btn{
@@ -71,8 +65,8 @@ p{
 
 
 .footer {
-    background: #001f3f;
-    padding: 20px;
+    background: #000f3f;
+    padding: 20.5px;
     text-align: center;
     color: white;
 }
