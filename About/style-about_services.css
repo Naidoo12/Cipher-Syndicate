@@ -343,3 +343,10 @@ footer{
       transform: translateY(0);
   }
 }
+
+@media (max-width: 500px) {
+  body{
+    padding: 100px;
+  }
+  
+}
