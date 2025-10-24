@@ -25,6 +25,8 @@ body {
     margin-right: 20px;
 }
 
+
+
 nav ul {
     list-style-type: none;
     display: flex;
@@ -191,11 +193,16 @@ footer {
 
 }
 @media (max-width: 500px) {
+    .header{
+        margin-top: -15%;
+    }
     .footer{
         position: fixed;
         bottom: 0;
-        width: 85%;
+        width: 86%;
+    }
+    .footer p {
+        font-size: small;
     }
 
-
-
+}

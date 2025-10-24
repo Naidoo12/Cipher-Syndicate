@@ -159,6 +159,9 @@ p{
     footer{
        width: 90.5%; 
     }
+    .hamburger{
+        margin-right: 7%;
+    }
 }
 
 @media (max-width: 400px) {

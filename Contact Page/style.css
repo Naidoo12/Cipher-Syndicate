@@ -365,6 +365,8 @@ a:hover{
   #chat-box{
     width: 60%;
   }
-  
+  .hamburger{
+    margin-right: 7%;
+  }
 }
 

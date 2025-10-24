@@ -176,32 +176,120 @@ footer{
         margin-bottom: -68px;
         width: 90%;
     }
+    .hamburger{
+        margin-right: 7%;
+    }
     
 }
 @media (max-width: 400px) {
 
+    header{
+        margin-top: 5%;
+    }
     .about{
         padding-top: 0%;
     }
-    .about h2{
-        padding-bottom: -100;
-    }
+    
     .group{
         margin-bottom: 10%;
     }
-    h2{
-        margin-top: -10px;
-        font-size: small;
+    .container h2{
+        margin-top: 5%;
+        font-size: large;
     }
-    p{
-        font-size: x-small;
+   .container p{
+        font-size: small;
     }
     
     .container{
-        margin-bottom: -20%;
+        margin-bottom: 10%;
+    }
+    
+    footer{
+        margin-bottom: -25%;
+        width: 89.5%;
+    }
+    .hamburger{
+        margin-right: 5%;
     }
     
 }
+@media (max-width: 380px) {
+
+    .logo{
+        margin-left: -50%;
+        
+    }
+
+    header{
+        margin-top: 15%;
+    }
+    .about{
+        padding-top: 0%;
+    }
+    
+    .group{
+        margin-bottom: 10%;
+    }
+    .container h2{
+        margin-top: 9%;
+        margin-bottom: -8%;
+        font-size: large;
+    }
+   .container p{
+        font-size: small;
+    }
+    
+    .container{
+        margin-bottom: 10%;
+    }
+    
+    footer{
+        margin-bottom: -25%;
+        width: 89.5%;
+    }
+    .hamburger{
+        margin-right: 5%;
+    }
+    
+}
+/* Code for the SE */
+@media (max-width: 380px) and (max-width:700px) {
+
+    header{
+        margin-top: 15%;
+    }
+    .about{
+        padding-top: 0%;
+    }
+    
+    .container h2{
+        margin-top: -2%;
+        margin-bottom: -8%;
+        font-size: large;
+    }
+   .container p{
+        font-size: small;
+    }
+    
+    .container{
+        margin-bottom: 10%;
+    }
+    .group p{
+        margin-top: 15%;
+        font-size: x-small;
+    }
+    
+    footer{
+        margin-bottom: -25%;
+        width: 89.5%;
+    }
+    .hamburger{
+        margin-right: 5%;
+    }
+    
+}
+
 
 .hamburger {
     display: none;
@@ -262,4 +350,4 @@ footer{
     width: 250px; 
     }
 
-    
+}
