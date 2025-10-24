@@ -122,8 +122,7 @@ button:hover{
 }
 
 footer {
-    display: block;
-    clear: both;
+    
     width: 100%;
     background-color: #000f3f;
     padding: 20px;
@@ -189,8 +188,14 @@ footer {
 .sidebar.active {
     width: 250px; 
     }
-}
 
+}
+@media (max-width: 500px) {
+    .footer{
+        position: fixed;
+        bottom: 0;
+        width: 85%;
+    }
 
 
 
