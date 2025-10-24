@@ -314,8 +314,57 @@ a:hover{
   width: 250px; 
   }
 }
-
-
-
-
+@media (max-width: 900px) {
+  .faq{
+    margin-bottom: 20%;
+  }
+  footer{
+    position: fixed;
+  }
+  
+}
+@media (max-width: 500px) {
+  .contact-section{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .contact-form input{
+    width: 90%;    
+  }
+  .contact-form textarea{
+    width: 90%;
+    height: 90px;
+  }
+  h2{
+    font-size: large;
+  }
+  p{
+    font-size: small;
+  }
+  iframe{
+    padding-top: 2%;
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .contact-info{
+    height: 100%;
+  }
+  .contact-info i{
+    font-size: large;
+  }
+  footer{
+    position: fixed;
+  }
+  .faq{
+    margin-bottom: 25%;
+    
+  }
+  #chat-box{
+    width: 60%;
+  }
+  
+}
 

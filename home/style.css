@@ -88,15 +88,6 @@ p{
     margin: 10px;
 }
 
-footer {
-    background: #000f3f;
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
-
-
-
 video{
     opacity: 100%;
     position: fixed;
@@ -105,4 +96,110 @@ video{
     z-index: -1;
     filter: brightness(0.7);
 
+}
+footer{
+    position: absolute;
+    
+    background: #000f3f;
+    padding: 20px;
+    width: 97.4%;
+    text-align: center;
+    color: white;
+
+    }
+
+
+@media (max-width: 900px) {
+    
+    .container{
+        height: 1vh;
+    }
+    footer{
+        background-color: #001f3f;
+    }
+    .container{
+     height: 10%;
+     padding-top: 5%;   
+    }
+    .group{
+        display: flex;
+        padding-top: 20px;
+    }
+    .contact-us{
+        height: 30vh;
+    }
+    .services{
+        height: 30vh;
+    }
+
+    
+    
+}
+@media (max-width: 500px) {
+    
+    h2{
+        font-size: large;
+        padding-bottom: 0%;
+    }
+    
+    p{
+        font-size: small;
+    }
+    .about h2{
+        padding-bottom: 25px;
+    }
+    .container{
+     height: 20%;
+     padding-top: 5%;   
+    }
+    .group{
+        display: flex;
+        padding-top: 20px;
+    }
+    .services button{
+        font-size: small;
+        margin-top: 7%;
+        width: 60%;
+    }
+    .services{
+    height: 30vh;   
+    }
+    .contact-us button{
+        font-size: small;
+        margin-top: 7%;
+        width: 60%;
+    }
+    .contact-us{
+        height: 30vh;
+    }
+    footer{
+        margin-bottom: -68px;
+        width: 90%;
+    }
+    
+}
+@media (max-width: 400px) {
+
+    .about{
+        padding-top: 0%;
+    }
+    .about h2{
+        padding-bottom: 25px;
+    }
+    .group{
+        margin-bottom: - -80px;
+    }
+    h2{
+        margin-top: -10px;
+        font-size: small;
+    }
+    p{
+        font-size: x-small;
+    }
+    footer{
+        margin-bottom: -55px;
+        width: 89.5%;
+    }
+    
+    
 }

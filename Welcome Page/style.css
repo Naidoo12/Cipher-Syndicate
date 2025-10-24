@@ -122,13 +122,41 @@ p{
 
 .hamburger {
     display: block; 
+    margin-right: 9%;
+    margin-top: 5%;
     }
 
 .sidebar.active {
     width: 250px; 
     }
+    footer{
+        position: absolute;
+        bottom: 0;
+        width: 90%;
+        margin-bottom: -40px;
+    }
 }
 
+@media (max-width: 400px) {
+
+    .CP h1{
+        font-size: xx-large;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .CP h2{
+        font-size: large;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .CP p{
+        font-size: medium;
+    }
+    footer{
+        width: 89%;
+    }
+    
+}
 
 
 
