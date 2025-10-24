@@ -60,3 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     scrollTestimonials();
 });
+
+function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("active");
+}

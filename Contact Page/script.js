@@ -122,3 +122,7 @@ Facebook & Instagram: Cipher Syndicate`,
   );
   setTimeout(showMainOptions, 100);
 }
+
+function toggleSidebar() {
+  document.getElementById("sidebar").classList.toggle("active");
+}
