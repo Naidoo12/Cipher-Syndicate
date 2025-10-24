@@ -122,11 +122,17 @@ button:hover{
 }
 
 footer {
-    display: block;
-    clear: both;
+    
     width: 100%;
     background-color: #000f3f;
     padding: 20px;
     text-align: center;
     color: #fdf6e2;
+}
+@media (max-width: 500px) {
+    .footer{
+        position: fixed;
+        bottom: 0;
+        width: 85%;
+    }
 }

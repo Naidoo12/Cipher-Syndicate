@@ -137,10 +137,13 @@ p{
     }
 }
 
-@media (max-width: 400px) {
-
+@media (max-width: 500px) {
+   .CP{
+    height: 50%;
+   }
     .CP h1{
         font-size: xx-large;
+        margin-top: 40%;
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -151,6 +154,33 @@ p{
     }
     .CP p{
         font-size: medium;
+    }
+    
+    footer{
+       width: 90.5%; 
+    }
+}
+
+@media (max-width: 400px) {
+    .CP{
+        padding-bottom: -300%;
+    }
+    .CP h1{
+        font-size: xx-large;
+        margin-top: 40%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .CP h2{
+        font-size: large;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .CP p{
+        font-size: medium;
+    }
+    video{
+        height: 10%;
     }
     footer{
         width: 89%;

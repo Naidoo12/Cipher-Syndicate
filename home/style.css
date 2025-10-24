@@ -184,10 +184,10 @@ footer{
         padding-top: 0%;
     }
     .about h2{
-        padding-bottom: 25px;
+        padding-bottom: -100;
     }
     .group{
-        margin-bottom: - -80px;
+        margin-bottom: 10%;
     }
     h2{
         margin-top: -10px;
@@ -196,10 +196,9 @@ footer{
     p{
         font-size: x-small;
     }
-    footer{
-        margin-bottom: -55px;
-        width: 89.5%;
-    }
     
+    .container{
+        margin-bottom: -20%;
+    }
     
 }
