@@ -1,19 +1,15 @@
-body {
+body{
     background-color: antiquewhite;
-}
-
-
-.header {
-    text-align: center;
-    padding: 100px 40px 40px;
-    background: #000f3f;
-    color: white;
 }
 
 .intro{
     text-align: center;
 }
 
+.image img.sigh {
+    width: 150px;
+    border-radius: 50%;
+}
 .hr{
     border: none;
     border-top: solid 1px #000f3f;
@@ -23,46 +19,31 @@ body {
     margin-right: 20px;
 }
 
-
-
-nav ul {
-    list-style-type: none;
+.container{
     display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-}
-
-
-
-
-.container {
-    display: flex;     /*This is the horizontal layout*/      
     gap: 20px;
-    flex-wrap: nowrap;       /*This will prevent the wrapping*/
-    overflow-x: hidden;      /* i had noticed that in the testimonials there was a scrollbar, so i made the scrollbar hidden*/
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     width: 100%;
+    height: 400px;
     background-color: #000f3f;
+    
 }
 
 .item {
-    flex: 0 0 auto;          
-    width: 250px;
+    position: absolute;
+    display: none;  
     background-color: lightgray;
-    box-shadow: 0 5px 10px black;
-    /*border: 4px solid lightgrey;*/
-    margin: 30px 10px;
+    width: 250px;
+    margin: 30px 5px;
     padding: 20px 20px 40px;
     text-align: center;
     box-sizing: border-box;
-    border-radius: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 20px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 .item:hover{
     transform: scale(1.05);
@@ -70,11 +51,6 @@ nav ul li a {
     background-color: lightblue;
    
 }
-.image img.sigh {
-    width: 150px;
-    border-radius: 50%;
-}
-
 button{
     margin-top: 5px;
     padding: 5px;
@@ -83,25 +59,57 @@ button{
     background-color: lightgray;
     box-shadow: 0 5px 12px black;
 }
-
 button:hover{
     background-color: white;
-    scale: 1.1;
     cursor: pointer;
 }
+/* button code */
+.left{
+    position: absolute; 
+    text-align: center;
+    font-size: large;
+    background-color: #5dade2;
+    border: none;
+    height: 10%;
+    width: 3%;
+    left:0; 
+    margin: 3%; 
+}
+.left:hover {
+    background-color: hsl(204, 70%, 70%);
+}
+.right{
+    position: absolute; 
+    text-align: center;
+    font-size: large;
+    background-color: #5dade2;
+    border: none;
+    height: 10%;
+    width: 3%;
+    right:0; 
+    margin: 3%; 
+}
+.right:hover {
+    background-color: hsl(204, 70%, 70%);
+}
+
+/* The testimoanial code */
 
 .testimonial-container {
+    justify-content: center;
     display: flex;         /*I added this so the horizontal scroll works (without display: flex) the testimonials stacked vertically by default.*/  
-    gap: 32px;
+    gap: 3%;
     overflow-x: hidden;    /*and also same story as the display: flex */  
     padding: 50px;
     width: 100%;
+    height: 400px;
     background-color: #000f3f;
     box-sizing: border-box;
     margin-bottom: 80px;
 }
-
 .testimonial {
+    position: absolute;
+    display: none;
     flex: 0 0 auto;          
     width: 500px;
     height: 300px;
@@ -121,60 +129,16 @@ button:hover{
     background-color: lightblue;
 }
 
-footer {
-    
-    width: 100%;
-    background-color: #000f3f;
+.footer{
+
+    bottom: 0;
+    background: #000f3f;
     padding: 20px;
+    width: 100%;
     text-align: center;
-    color: #fdf6e2;
-}
-
-.hamburger {
-    display: none;
-    font-size: 28px;
     color: white;
-    cursor: pointer;
 }
 
-
-.sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #001f54;
-    overflow-x: hidden;
-    transition: width 0.3s ease;
-    padding-top: 60px;
-    z-index: 1100;
-}
-
-.sidebar a {
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: background 0.3s;
-}
-
-.sidebar a:hover {
-    background-color: #003580;
-}
-
-.sidebar .closebtn {
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    font-size: 26px;
-    color: white;
-    cursor: pointer;
-}
-/* Trying to make a djustments to the testimonail */
 .toPrimary{
     display: block;
     animation-name: toPrimary; 
@@ -196,63 +160,95 @@ footer {
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
+
+.reversePrimary{
+    display: block;
+    animation-name: reversePrimary; 
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.reverseSecondary{
+    display: block;
+    animation-name: reverseSecondary; 
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.reverseEnter{
+    display: block;
+    animation-name: reverseEnter; 
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
 @keyframes toPrimary{
     from{
-        transform: translateX(90%);
+        transform: translateX(120%);
         opacity: 70%;
     }
     to{
-        transform: translateX(0%);
+        transform: translateX(100%);
         transform: scale(1.1);     
     }
     
 }
+@keyframes reversePrimary {
+    from{
+        transform: translateX(-200%);
+        opacity: 0%;
+    }
+    to{
+        transform: translateX(-120%);
+        opacity: 70%;
+            
+    }
+}
+
 @keyframes toSecondary {
     from{
-        transform: translateX(0%);
+        transform: translateX(100%);
         transform: scale(1.1);
     }
     to{
-        transform: translateX(-90%);
+        transform: translateX(-120%);
         opacity: 70%;
     }
     
 }
-@keyframes toEnter {
+@keyframes reverseSecondary {
     from{
-        transform: translateX(200%);
+        transform: translateX(100%);
+        transform: scale(1.1);
     }
     to{
-        transform: translateX(90%);
+        transform: translateX(120%);
         opacity: 70%;    
     }
 }
 
-@media (max-width: 768px) {
-    nav ul {
-    display: none; 
+@keyframes toEnter {
+    from{
+        transform: translateX(200%);
+        opacity: 0%;
+    }
+    to{
+        transform: translateX(120%);
+        opacity: 70%;    
+    }
 }
-
-.hamburger {
-    display: block; 
+@keyframes reverseEnter {
+    
+    from{
+        transform: translateX(-120%);
+        opacity: 70%;
     }
-
-.sidebar.active {
-    width: 250px; 
+    to{
+        transform: translateX(100%);
+        transform: scale(1.1);
+        
     }
-
-}
-@media (max-width: 500px) {
-    .header{
-        margin-top: -15%;
-    }
-    .footer{
-        position: fixed;
-        bottom: 0;
-        width: 86%;
-    }
-    .footer p {
-        font-size: small;
-    }
-
+    
+    
 }
