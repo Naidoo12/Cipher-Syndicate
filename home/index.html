@@ -12,7 +12,7 @@
     <title>Home</title>
 </head>
 <body>
-    <video src="/home/video/slideshow.mp4" autoplay loop></video>
+    <video src="/home/video/keyboard.mp4" autoplay loop></video>
         <header>
         
         <nav>
@@ -61,29 +61,54 @@
         <p>Code. Create. Captivate</p>
         
     </header>
-
-    <div class="container">
-        <div class="about">
-            <h2>Welcome to Cipher Syndicate</h2>
-            <p>At Cipher Syndicate, we don't just build software; we craft digital experiences. We transform ideas into elegant, secure, and scalable technology solutions.</p>
-            <p>Whether it's building software or bringing your ideas to life, Cipher Syndicate can meet all your needs. </p>
+    <main>
+     <div class="container" >
+        <div class="about" >
+            <h2 >Welcome to Cipher Syndicate</h2><br>
+            <p id="item1">At Cipher Syndicate, we don't just build software; we craft digital experiences. We transform ideas into elegant, secure, and scalable technology solutions.
+             Whether it's building software or bringing your ideas to life, Cipher Syndicate can meet all your needs. </p>
         </div>
         <div class="group">
         <div class="services">
             <h2>Our Services</h2>
-            <p>We offer a variety of services, ranging from front-end design to back-end development and program creation. 
-                For more information, check out our services below.
-            </p>  
-         
+            <p id="item2">We offer a variety of services, ranging from front-end design to back-end development and program creation. For more information, check out our services below.
+            </p><br>
             <button onclick="window.location.href='/About/About.html#services2';">Check out our services</button>
         </div>
         <div class="contact-us">
             <h2>Contact us</h2>
-            <p>Contact us through any of our official channels linked below for a quote or any inquiries you may have about our company or services.</p>
+            <p id="item3">Contact us through any of our official channels linked below for a quote or any inquiries you may have about our company or services.</p><br>
             <button onclick="window.location.href='/Contact Page/contact.html';">Contact us </button>
         </div>
         </div>
     </div>
+    <script>
+        window.onload = function() {
+          function typeEffect(elementId) {
+            const textElement = document.getElementById(elementId);
+            const text = textElement.textContent;
+            textElement.textContent = '';
+        
+            let i = 0;
+            function typing() {
+              if (i < text.length) {
+                textElement.textContent += text.charAt(i);
+                i++;
+                setTimeout(typing, 80);
+              }
+            }
+            typing();
+          }
+        
+          typeEffect('item1');
+          typeEffect('item2');
+          typeEffect('item3');
+        };
+        </script>
+        
+           
+</main>
+
 
     <footer>
         <p>© 2025 Cipher Syndicate | Code. Create. Captivate</p>

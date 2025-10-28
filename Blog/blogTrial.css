@@ -1,0 +1,472 @@
+body{
+    background-color: antiquewhite;
+}
+
+.intro{
+    text-align: center;
+}
+
+.image img.sigh {
+    width: 150px;
+    border-radius: 50%;
+}
+.hr{
+    border: none;
+    border-top: solid 1px #000f3f;
+    margin-left: 20px;
+    height: 10px;
+    color: blue;
+    margin-right: 20px;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 400px;
+    background-color: #000f3f;
+    
+}
+
+.item {
+    position: absolute;
+    display: none;  
+    background-color: lightgray;
+    width: 250px;
+    margin: 30px 5px;
+    padding: 20px 20px 40px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 20px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.item:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* stronger shadow */
+    background-color: lightblue;
+   
+}
+button{
+    margin-top: 5px;
+    padding: 5px;
+    border: solid 2px black;
+    border-radius: 8px;
+    background-color: lightgray;
+    box-shadow: 0 5px 12px black;
+}
+button:hover{
+    background-color: white;
+    cursor: pointer;
+}
+/* button code */
+.left{
+    position: absolute; 
+    text-align: center;
+    font-size: large;
+    background-color: #5dade2;
+    border: none;
+    height: 10%;
+    width: 3%;
+    left:0; 
+    margin: 3%; 
+}
+.left:hover {
+    background-color: hsl(204, 70%, 70%);
+}
+.right{
+    position: absolute; 
+    text-align: center;
+    font-size: large;
+    background-color: #5dade2;
+    border: none;
+    height: 10%;
+    width: 3%;
+    right:0; 
+    margin: 3%; 
+}
+.right:hover {
+    background-color: hsl(204, 70%, 70%);
+}
+
+/* The testimoanial code */
+ /*
+.testimonial-container {
+    justify-content: center;
+    display: flex;         /*I added this so the horizontal scroll works (without display: flex) the testimonials stacked vertically by default. 
+    gap: 3%;
+    overflow-x: hidden;    /*and also same story as the display: flex  
+    padding: 50px;
+    width: 100%;
+    height: 400px;
+    background-color: #000f3f;
+    box-sizing: border-box;
+    margin-bottom: 80px;
+}
+.testimonial {
+    position: absolute;
+    display: none;
+    flex: 0 0 auto;          
+    width: 500px;
+    height: 300px;
+    background-color: lightgray;
+    box-shadow: 0 5px 10px black;
+    padding: 20px;
+    text-align: center;
+    overflow-y: auto;        
+    box-sizing: border-box;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.testimonial:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background-color: lightblue;
+} */
+
+
+
+.toPrimary{
+    display: block;
+    animation-name: toPrimary; 
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.toSecondary{
+    display: block;
+    animation-name: toSecondary; 
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.toEnter{
+    display: block;
+    animation-name: toEnter; 
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.reversePrimary{
+    display: block;
+    animation-name: reversePrimary; 
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.reverseSecondary{
+    display: block;
+    animation-name: reverseSecondary; 
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.reverseEnter{
+    display: block;
+    animation-name: reverseEnter; 
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes toPrimary{
+    from{
+        transform: translateX(120%);
+        opacity: 70%;
+    }
+    to{
+        transform: translateX(100%);
+        transform: scale(1.1);     
+    }
+    
+}
+@keyframes reversePrimary {
+    from{
+        transform: translateX(-200%);
+        opacity: 0%;
+    }
+    to{
+        transform: translateX(-120%);
+        opacity: 70%;
+            
+    }
+}
+
+@keyframes toSecondary {
+    from{
+        transform: translateX(100%);
+        transform: scale(1.1);
+    }
+    to{
+        transform: translateX(-120%);
+        opacity: 70%;
+    }
+    
+}
+@keyframes reverseSecondary {
+    from{
+        transform: translateX(100%);
+        transform: scale(1.1);
+    }
+    to{
+        transform: translateX(120%);
+        opacity: 70%;    
+    }
+}
+
+@keyframes toEnter {
+    from{
+        transform: translateX(200%);
+        opacity: 0%;
+    }
+    to{
+        transform: translateX(120%);
+        opacity: 70%;    
+    }
+}
+@keyframes reverseEnter {
+    
+    from{
+        transform: translateX(-120%);
+        opacity: 70%;
+    }
+    to{
+        transform: translateX(100%);
+        transform: scale(1.1);
+        
+    }
+    
+    
+}
+
+
+
+.header {
+    text-align: center;
+    padding: 100px 40px 40px;
+    background: #000f3f;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+.carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+.item p {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px 0;
+    line-height: 1.3;
+}
+
+.item:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background-color: lightblue;
+}
+
+/* For the profile images */
+.image img.sigh {
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+button{
+    margin-top: 5px;
+    padding: 5px;
+    border: solid 2px black;
+    border-radius: 8px;
+    background-color: lightgray;
+    box-shadow: 0 5px 12px black;
+}
+
+button:hover{
+    background-color: white;
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* This is for the Carousel scroll buttons, but we will use Luyanda's(bite me) not mine 
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+    border-radius: 50%;
+}
+
+.scroll-btn.left { left: 0; }
+.scroll-btn.right { right: 0; }
+
+.scroll-btn:hover { background-color: rgba(0,0,0,0.8); }*/
+
+footer {
+    margin-top: 6%;
+    width: 97,1%;
+    background-color: #000f3f;
+    padding: 20px;
+    text-align: center;
+    color: #fdf6e2;
+}
+
+/* This is for the hamburger menu */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+/* This is basically for the sidebar for the different devices like how binary bbloom was doing */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #001f54;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    padding-top: 60px;
+    z-index: 1100;
+}
+
+.sidebar a {
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover { background-color: #003580; }
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+}
+
+/* for different devices responsiveness */
+@media (max-width: 768px) {
+    nav ul { display: none; }
+    .hamburger { display: block; }
+    .sidebar.active { width: 250px; }
+}
+
+@media (max-width: 500px) {
+    .header { margin-top: -15%; }
+    .footer { position: fixed; bottom: 0; width: 86%; }
+    .footer p { font-size: small; }
+}
+
+.modal { 
+    display: none; 
+    position: fixed; 
+    z-index: 200; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.7); 
+}
+
+.modal-content { 
+    background-color: #fefefe; 
+    margin: 10% auto; 
+    padding: 20px; 
+    border-radius: 15px; 
+    width: 60%; 
+    max-width: 700px; 
+}
+
+.close { 
+    color: #aaa; 
+    float: right; 
+    font-size: 28px; 
+    font-weight: bold; 
+    cursor: pointer; 
+}
+
+#testimonial-modal .modal-content {
+    background-color: white;
+    border-radius: 15px;
+    width: 60%;
+    max-width: 700px;
+    padding: 20px;
+    margin: 10% auto;
+    text-align: center;
+}
+
+.close-testimonial {
+    float: right;
+    font-size: 28px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close-testimonial:hover {
+    color: black;
+}
+
+.member-info{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.member-info img{
+    border-radius: 15px;
+}
+
+#testimonial-text {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 8px;
+}

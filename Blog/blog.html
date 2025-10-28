@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="blogTrial.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Blog</title>
-<link rel="stylesheet" href="blog.css">
+<!--<link rel="stylesheet" href="blog.css">-->
 <link rel="stylesheet" href="/main.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -52,11 +53,27 @@
                 </a>
                 </li>
             </ul>
+
+            <div class="hamburger" onclick="toggleSidebar()">
+                <i class="fas fa-bars"></i>
+            </div>
             
         </nav>
+
+        <div id="sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">
+              <i class="fas fa-times"></i>
+            </a>
+            <a href="/home/index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="/About/About.html"><i class="fas fa-info-circle"></i> About us</a>
+            <a href="/About/About.html#services2"><i class="fas fa-cogs"></i> Services</a>
+            <a href="/Blog/blog.html"><i class="fas fa-blog"></i> Blog</a>
+            <a href="/Contact Page/contact.html"><i class="fas fa-envelope"></i> Contact us</a>
+        </div>
+        
     <h1 id = "text"><i class="fas fa-blog"></i> Blog</h1>
-    <p>Code. Create. Captivate</p>
-    
+    <p>Code. Create. Captivate</p> 
+      
 </header>
 
 <br>
@@ -65,161 +82,121 @@
 
     <h1 class="intro"> <b><em style="font-size: 40px;font-family: Arial, Helvetica, sans-serif;font-style: normal;">Meet Our Team Members</em></b></h1>
     <br>
-   
-    <br>
+    <div class="carousel-wrapper">
+        <button class="scroll-btn left"><i class="fas fa-chevron-left"></i></button>
+        <div class="container">
+            <div class="item">
+                <div class="image"><img class="sigh" src="/Blog/images/Images/The Developer.jpg" alt="The Developer"></div>
+                <h3>The Developer</h3>
+                <p class="p"><img class="icon" src="svg/cpu.svg" alt=""></p>
+                <p>Mr Brighten <br><b><u>Full Stack</u></b> <br><em>Chairperson/Founder</em></p>
+                <button class="view-details" data-member="developer">View Details about The Developer</button>
+            </div>
 
-<div class="container">
-  <div class="item">
-      <div class="image">
-          <img class="sigh" src="images/Images/Shadow_Byte.jpg" alt="">
-      </div>
-      <h3>Shadow Byte</h3>
-      <p class="p"><img class="icon" src="svg/card-image.svg" alt=""></p>
-      <p>Thandolwami Mayeza <br><b><u> Specialising in</u></b> <br><em>Front-end Development</em><br><a href="CVs/thandolwamis cv (1).pdf"><button>Download CV</button></p></a>
-  </div>
+            <div class="item">
+                <div class="image"><img class="sigh" src="/Blog/images/Images/Silent_Server.jpg" alt="Silent Server"></div>
+                <h3>Silent Server</h3>
+                <p class="p"><img class="icon" src="svg/cpu.svg" alt=""></p>
+                <p>Sambulo Sithole <br><b><u>Back-end Developer</u></b> <br><em>Treasurer/Co-Founder</em></p>  <!--The role is not visibel in the profile cards-->
+                <button class="view-details" data-member="silentserver">View Details about Silent Server</button>
+            </div>
 
-  <div class="item">
-      <div class="image">
-          <img class="sigh" src="images/Images/Cache_Cat.jpg" alt="">
-      </div>
-      <h3>Cache Cat</h3>
-      <p class="p"><img class="icon" src="svg/card-image.svg" alt=""></p>
-      <p>Luyanda Gumede<br><b><u> Specialising in</u></b> <br><em>Front-end Development</em><br><a href="CVs/CV.pdf"><button>Download CV</button></a></p>
-  </div>
+            <div class="item">
+                <div class="image"><img class="sigh" src="/Blog/images/Images/Code01.jpg" alt="Code 01"></div>
+                <h3>Code 01</h3>
+                <p class="p"><img class="icon" src="svg/cpu.svg" alt=""></p>
+                <p>Tiashen Naidoo<br><b><u>Back-end Developer</u></b> <br><em>Business Plan/Co-Founder</em></p>
+                <button class="view-details" data-member="code01">View Details about The Code 01</button>
+            </div>
 
-  <div class="item">
-      <div class="image">
-          <img class="sigh" src="images/Images/Binary_Bloom.jpg" alt="">
-      </div>
-      <h3>Binary Bloom</h3>
-      <p class="p"><img class="icon" src="svg/card-image.svg" alt=""></p>
-      <p>Luyanda Mkhwanazi <br><b><u> Specialising in</u></b> <br><em>Front-end Development</em><br><a href="CVs/CV_2025092819370472.pdf"><button>Download CV</button></a></p>
-  </div>
+            <div class="item">
+                <div class="image"><img class="sigh" src="/Blog/images/Images/Shadow_byte.jpg" alt="Shadow Byte"></div>
+                <h3>Shadow Byte</h3>
+                <p class="p"><img class="icon" src="svg/card-image.svg" alt=""></p>
+                <p>Thandolwami Mayeza <br><b><u>Front-end Developer</u></b> <br><em>P.R.O/Marketing</em></p>
+                <button class="view-details" data-member="shadowbyte">View Details about Shadow Byte</button>
+            </div>
 
-  <div class="item">
-      <div class="image">
-          <img class="sigh" src="images/Images/Codessa.jpg" alt="">
-      </div>
-      <h3>Codessa</h3>
-      <p class="p"><img class="icon" src="svg/cpu.svg" alt=""></p>
-      <p>Londiwe Afrikander <br><b><u> Specialising in</u></b> <br><em>Full-stack Development</em><br><a href="CVs/CODESSA CV.pdf"><button>Download CV</button></a></p>
-  </div>
+            <div class="item">
+                <div class="image"><img class="sigh" src="/Blog/images/Images/Codessa.jpg" alt="Codessa"></div>
+                <h3>Codessa</h3>
+                <p class="p"><img class="icon" src="svg/cpu.svg" alt=""></p>
+                <p>Londiwe Afrikander <br><b><u>Back-end(FS) Developer</u></b> <br><em>Administrator</em></p>
+                <button class="view-details" data-member="codessa">View Details about Codessa</button>
+            </div>
 
-  <div class="item">
-    <div class="image">
-        <img class="sigh" src="images/Images/Data_Bullet.jpg" alt="">
+            <div class="item">
+                <div class="image"><img class="sigh" src="/Blog/images/Images/Binary_Bloom.jpg" alt="Binary Bloom"></div>
+                <h3>Binary Bloom</h3>
+                <p class="p"><img class="icon" src="svg/card-image.svg" alt=""></p>
+                <p>Luyanda Mkhwanazi <br><b><u>Front-end Developer</u></b> <br><em>Secretary</em></p>
+                <button class="view-details" data-member="binarybloom">View Details about Binary Bloom</button>
+            </div>
+
+            <div class="item">
+                <div class="image"><img class="sigh" src="/Blog/images/Images/Data_Bullet.jpg" alt="Data Bullet"></div>
+                <h3>Data Bullet</h3>
+                <p class="p"><img class="icon" src="svg/cpu.svg" alt=""></p>
+                <p>Reece Chetty <br><b><u>Back-end Developer</u></b> <br><em>Business Plan</em></p>
+                <button class="view-details" data-member="databullet">View Details about Data Bullet</button>
+            </div>
+
+            <div class="item">
+                <div class="image"><img class="sigh" src="images/Images/Cache_Cat.jpg" alt="Cache Cat"></div>
+                <h3>Cache Cat</h3>
+                <p class="p"><img class="icon" src="svg/card-image.svg" alt=""></p>
+                <p>Luyanda Gumede <br><b><u>Front-end Developer</u></b> <br><em>Marketing</em></p>
+                <button class="view-details" data-member="cachecat">View Details about Cache Cat</button>
+            </div>
+        </div>
+        <button class="scroll-btn right"><i class="fas fa-chevron-right"></i></button>
+        <button class="left" onclick="prevMember()">&#10094</button>
+        <button class="right" onclick="nextMember()">&#10095</button>
     </div>
-    <h3>Data Bullet</h3>
-    <p class="p"><img class="icon" src="svg/cpu.svg" alt=""></p>
-    <p>Reece Chetty<br><b><u> Specialising in</u></b> <br><em>Back-end Development</em><br><a href="CVs/Curriculum_vitae_of_Reece_Chetty.pdf"><button>Download CV</button></p></a>
-</div>
-
-  <div class="item">
-      <div class="image">
-          <img class="sigh" src="images/Images/Code01.jpg" alt="">
-      </div>
-      <h3>Code 01</h3>
-      <p class="p"><img class="icon" src="svg/cpu.svg" alt=""></p>
-      <p>Tiashin Naidoo<br><b><u> Specialising in</u></b> <br><em>Back-end Development</em><br><a href="CVs/CV - T.Naidoo.pdf"><button>Download CV</button></a></p>
-  </div>
-
-  <div class="item">
-      <div class="image">
-          <img class="sigh" src="images/Images/Silent_Server.jpg" alt="">
-      </div>
-      <h3>Silent Server</h3>
-      <p class="p"><img class="icon" src="svg/cpu.svg" alt=""></p>
-      <p>Sambulo Sithole<br><b><u> Specialising in</u></b> <br><em>Back-end Development</em><br><a href="CVs/Sambulo_Sithole CV.pdf"><button>Download CV</button></a></p>
-  </div>
-
-  <div class="item">
-      <div class="image">
-          <img class="sigh" src="https://airnfts.s3.amazonaws.com/nft-images/20210517/Perfect_Black_Square_1621245088744.png" alt="">
-      </div>
-      <h3>The Developer</h3>
-      <p class="p"><img class="icon" src="svg/cpu.svg" alt=""></p>
-      <p>Brighton <br><b><u> Specialising in</u></b> <br><em>Web Development and Mobile Applications</em><br><a href="CVs/"><button>Download CV</button></a></p>
-  </div>
-
-</div>
-
-<br><br>
-<h1 class="intro"> <b><em style="font-size: 40px;font-family: Arial, Helvetica, sans-serif;font-style: normal;">Testimonials</em></b></h1>
-
-<br><br>
 
 <!--Corrected the HTML typo. Initially it was <div class=".testimonial-container{ ,which prevented js from finding it, because js was trying to select .testimonial-container but couldn't find anything that is why i think the testimonials stayed still."-->
-<div class="testimonial-container"><!--so i just did it like this instead of <div class=".testimonial-container{-->
-  <div class="testimonial">
-      <h3>Shadow Byte</h3>
-      <p class="p"><img class="icon" src="svg/chat-right-quote.svg" alt=""></p>
-      <p><b><em>
-          "Shadow Byte is young, enthusiastic, and <br>always eager to learn. Her ability to connect with different <br>people gives her a unique perspective on creating projects <br>that are not only functional but also user-focused. She has <br>a combination of creativity, adaptability, and determination <br>which makes her an exceptional developer."
-      </em></b></p>
-  </div>
+<!--<div class="testimonial-container">so i just did it like this instead of <div class=".testimonial-container{
+  
 
-  <div class="testimonial">
-      <h3>Data Bullet</h3>
-      <p class="p"><img class="icon" src="svg/chat-right-quote.svg" alt=""></p>
-      <p><b><em>
-         "Data Bullet is driven to say the <br>least. He has the traits of a true leader, including <br>punctuality, professionalism, and sound judgement, and <br>it shows in everything he does. His unique way of breaking <br>down tasks and dealing with them efficiently with sound <br>mind makes him an amazing asset to the team. He knows <br>how to balance work and fun and I admire his passion <br>for developing as well as his eagerness to learn."
-      </em></b></p>
-  </div>
-
-  <div class="testimonial">
-      <h3>Cache Cat</h3>
-      <p class="p"><img class="icon" src="svg/chat-right-quote.svg" alt=""></p>
-      <p><b><em>
-          "Cache Cat is an exceptional developer <br>and team player from whom you learn new skills each and <br>everyday. His key strengths include innovative problem-solving, <br>attention to detail and a collaborative mindset. He consistently <br>delivers high-quality work and is a valuable member to our team. <br>I'm impressed by his technical expertise and his ability <br>to adapt to new changes."
-      </em></b></p>
-  </div>
-
-  <div class="testimonial">
-      <h3>Binary Bloom</h3>
-      <p class="p"><img class="icon" src="svg/chat-right-quote.svg" alt=""></p>
-      <p><b><em>
-          "Binary bloom is a talented <br>developer who combines her technical skill with <br>creativity. She writes clean, efficient code and <br>approaches projects with precision, problem-solving <br>and a sharp eye for detail."
-      </em></b></p>
-  </div>
-
-  <div class="testimonial">
-      <h3>Codessa</h3>
-      <p class="p"><img class="icon" src="svg/chat-right-quote.svg" alt=""></p>
-      <p><b><em>
-          "Working with Codessa feels like <br>a gift i can always cherish. She pours excellence into <br>everything she does. As a developer, she quickly picks <br>up new languages and concepts, showing dedication <br>and true team spirit. What inspires me most is <br>her constant drive to grow and push herself <br>"further, she is an exceptional colleague <br>and an even better person.
-      </em></b></p>
-  </div>
-
-  <div class="testimonial">
-      <h3>Code 01</h3>
-      <p class="p"><img class="icon" src="svg/chat-right-quote.svg" alt=""></p>
-      <p><b><em>
-           "Code 01 is an exceptional team <br>player who brings valuable ideas to the table, I've <br>had the plreasure of working with him, and I've been <br>impressed by his ability to collaborate effectively with <br>everyone. He's creative, reliable and passionate <br>about his work. When Code01 believes in <br>something he wholeheartedly commits <br>to it."
-      </em></b></p>
-  </div>
-
-  <div class="testimonial">
-      <h3>Silent Server</h3>
-      <p class="p"><img class="icon" src="svg/chat-right-quote.svg" alt=""></p>
-      <p><b><em>
-            "Silent server is a calm and composed<br>individual who excels in high-pressure situations.<br>He's a dedicated, smart, and meticulous developer with a <br>string work ethic, consistently delivering high-quality <br>work. His contributions have been thoughtful and <br>impactful, showcasing his skill and commitment <br>to excellence. Overall, he is an invaluable team <br>member and an inspiring professional."
-      </em></b></p>
-  </div>
-
-  <div class="testimonial">
-      <h3>The Developer</h3>
-      <p class="p"><img class="icon" src="svg/chat-right-quote.svg" alt=""></p>
-      <p><b><em>
-           "The developer is the best leader I <br>could seek guidance from and I wish I had someone like <br>like him earlier in my life so I could be better off." <br>~Code01<br><br>"The developer is a mastermind whose <br>intellect shines like a beacon, illuminating complex <br>landscapes and crafting innovative solutions with <br>effortless finesse." <br>~Codessa<br>
-      </em></b></p>
-  </div>
+  <button class="left" onclick="prevTestimony()">&#10094</button>
+  <button class="right" onclick="nextTestimony()">&#10095</button>
 </div>
-
+-->
 </main>
 
 <footer class="footer">
     <p>&copy; 2025 Cipher Syndicate | Code. Create. Captivate.</p>
 </footer>
+
+
+<!-- This is the modal for our(members) details -->
+<div id="member-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="member-info" style="display: flex; gap: 20px; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 200px; text-align: center;">
+                <img id="modal-image" src="" alt="Member image" style="width: 100%; max-width: 250px; border-radius: 15px;">
+            </div>
+            <div style="flex: 2; min-width: 250px;">
+            <h2 id="modal-name"></h2>
+            <p id="modal-role"></p>
+            <p id="modal-description"></p>
+            <P id="modal-email"></P>
+            <p id="modal-phone"></p>
+            <button id="modal-testimonial-btn">View Testimonial</button></a>
+            <div id="testimonial-text" style="margin-top: 10px;display: none; line-height: 1.5;"></div>
+            <a id="modal-cv" href="#" target="_blank" style="display: block; margin-top: 15px;"><button>Download CV</button></a>
+        </div>
+    </div>
+</div>
+
+<div id="testimonial-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-testimonial">&times;</span>
+        <h2 id="testimonial-title">Testimonials</h2>
+        <div id="testimonial-text"></div>
+    </div>
+</div>
 
 <script src="blog.js"></script>
 </body>

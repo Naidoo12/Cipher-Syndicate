@@ -65,7 +65,7 @@ nav ul li a {
     text-align: center;
     box-sizing: border-box;
     border-radius: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease-in-out;
 }
 .item:hover{
     transform: scale(1.05);
