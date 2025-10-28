@@ -63,3 +63,7 @@ function closeService() {
   let infoBox = document.getElementById("service-info");
   infoBox.style.display = "none";
 }
+function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("active");
+}
+

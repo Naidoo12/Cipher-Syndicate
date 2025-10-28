@@ -54,30 +54,65 @@
                 </a>
                 </li>
             </ul>
-            
+
+            <div class="hamburger" onclick="toggleSidebar()">
+                <i class="fas fa-bars"></i>
+            </div>  
         </nav>
+
+        <div id="sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">
+              <i class="fas fa-times"></i>
+            </a>
+            <a href="/home/index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="/About/About.html"><i class="fas fa-info-circle"></i> About us</a>
+            <a href="/About/About.html#services2"><i class="fas fa-cogs"></i> Services</a>
+            <a href="/Blog/blog.html"><i class="fas fa-blog"></i> Blog</a>
+            <a href="/Contact Page/contact.html"><i class="fas fa-envelope"></i> Contact us</a>
+        </div>
+
 
         <h1><i class="fas fa-home"></i> Home</h1>
         <p>Code. Create. Captivate</p>
         
     </header>
+<<<<<<< HEAD
     <main>
      <div class="container" >
         <div class="about" >
             <h2 >Welcome to Cipher Syndicate</h2><br>
             <p id="item1">At Cipher Syndicate, we don't just build software; we craft digital experiences. We transform ideas into elegant, secure, and scalable technology solutions.
              Whether it's building software or bringing your ideas to life, Cipher Syndicate can meet all your needs. </p>
+=======
+
+    <div class="container">
+        <div class="about">
+            <h2>Welcome to Cipher Syndicate</h2>
+            <p>At Cipher Syndicate, we don't just build software; we craft digital experiences. We transform ideas into elegant, secure, and scalable technology solutions.</p>
+            <p>Whether it's building software or bringinging your ideas to life Cipher Syndicate can meet all your needs. </p>
+>>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
         </div>
         <div class="group">
         <div class="services">
             <h2>Our Services</h2>
+<<<<<<< HEAD
             <p id="item2">We offer a variety of services, ranging from front-end design to back-end development and program creation. For more information, check out our services below.
             </p><br>
+=======
+            <p>We offer a variety of services ranging from front end and design to back end 
+                and creating programs for more informations check out our services below
+            </p>  
+         
+>>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
             <button onclick="window.location.href='/About/About.html#services2';">Check out our services</button>
         </div>
         <div class="contact-us">
             <h2>Contact us</h2>
+<<<<<<< HEAD
             <p id="item3">Contact us through any of our official channels linked below for a quote or any inquiries you may have about our company or services.</p><br>
+=======
+            <p>Contact us on any of our official channels linked below for a quote or any query you might have involving our company or our dealings</p>
+>>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
             <button onclick="window.location.href='/Contact Page/contact.html';">Contact us </button>
         </div>
         </div>
@@ -113,5 +148,12 @@
     <footer>
         <p>© 2025 Cipher Syndicate | Code. Create. Captivate</p>
     </footer>
+
+    <script>
+        function toggleSidebar() {
+          document.getElementById("sidebar").classList.toggle("active");
+        }
+    </script>
+      
 </body>
 </html>

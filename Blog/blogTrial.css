@@ -94,12 +94,21 @@ button:hover{
 }
 
 /* The testimoanial code */
+<<<<<<< HEAD
  /*
 .testimonial-container {
     justify-content: center;
     display: flex;         /*I added this so the horizontal scroll works (without display: flex) the testimonials stacked vertically by default. 
     gap: 3%;
     overflow-x: hidden;    /*and also same story as the display: flex  
+=======
+
+.testimonial-container {
+    justify-content: center;
+    display: flex;         /*I added this so the horizontal scroll works (without display: flex) the testimonials stacked vertically by default.*/  
+    gap: 3%;
+    overflow-x: hidden;    /*and also same story as the display: flex */  
+>>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
     padding: 50px;
     width: 100%;
     height: 400px;
@@ -127,9 +136,23 @@ button:hover{
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     background-color: lightblue;
+<<<<<<< HEAD
 } */
 
 
+=======
+}
+
+.footer{
+
+    bottom: 0;
+    background: #000f3f;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+>>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
 
 .toPrimary{
     display: block;
@@ -243,6 +266,7 @@ button:hover{
     }
     
     
+<<<<<<< HEAD
 }
 
 
@@ -469,4 +493,6 @@ footer {
     background-color: #f5f5f5;
     padding: 10px;
     border-radius: 8px;
+=======
+>>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
 }

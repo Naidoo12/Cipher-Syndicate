@@ -6,6 +6,7 @@
     min-height: 100%;
     object-fit: cover;
     z-index: -1; /* Keep it behind text */
+<<<<<<< HEAD
   }
 
 header{
@@ -19,14 +20,22 @@ header{
     padding: 20px;        
     background: transparent; 
     z-index: 10;
+=======
+>>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
 }
 
 
+
 .CP{
+<<<<<<< HEAD
     padding-top: 100px;
     height: 72.5vh;
     display: flex;/*
     background-image: url('/Welcome page/images/hands1.jpg');*/
+=======
+    height: 74vh;
+    display: flex;
+>>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -39,16 +48,21 @@ header{
 .CP h1{
     color: white;
     font-size: 60px;
+<<<<<<< HEAD
     margin-top: -70px;
     padding-top: 50px;
     padding-bottom: 20px;
+=======
+    margin-top: 0px;
+    padding-bottom: 30px;
+>>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .CP h2{
     color: white;
     font-size: 28px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -60,7 +74,7 @@ header{
     line-height: 1.6;
     max-width: 880px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
+    padding-bottom: 20px;
 }
 
 .CP .btn{
@@ -78,13 +92,133 @@ p{
     color: white;
 }
 
-
-
 .footer {
-    background: #001f3f;
-    padding: 20px;
+    background: #000f3f;
+    padding: 20.5px;
     text-align: center;
     color: white;
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #001f54;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    padding-top: 60px;
+    z-index: 1100;
+}
+
+.sidebar a {
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #003580;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+    display: none; 
+}
+
+.hamburger {
+    display: block; 
+    margin-right: 9%;
+    margin-top: 5%;
+    }
+
+.sidebar.active {
+    width: 250px; 
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+        width: 90%;
+        margin-bottom: -40px;
+    }
+}
+
+@media (max-width: 500px) {
+   .CP{
+    height: 50%;
+   }
+    .CP h1{
+        font-size: xx-large;
+        margin-top: 40%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .CP h2{
+        font-size: large;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .CP p{
+        font-size: medium;
+    }
+    
+    footer{
+       width: 90.5%; 
+    }
+    .hamburger{
+        margin-right: 7%;
+    }
+}
+
+@media (max-width: 400px) {
+    .CP{
+        padding-bottom: -300%;
+    }
+    .CP h1{
+        font-size: xx-large;
+        margin-top: 40%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .CP h2{
+        font-size: large;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .CP p{
+        font-size: medium;
+    }
+    video{
+        height: 10%;
+    }
+    footer{
+        width: 89%;
+    }
+    
 }
 
 

@@ -10,20 +10,20 @@ body {
     color: white;
 }
 
-
-
 .intro{
     text-align: center;
 }
 
 .hr{
     border: none;
-    border-top: solid 1px #001f54;
+    border-top: solid 1px #000f3f;
     margin-left: 20px;
     height: 10px;
     color: blue;
     margin-right: 20px;
 }
+
+
 
 nav ul {
     list-style-type: none;
@@ -50,7 +50,11 @@ nav ul li a {
     white-space: nowrap;
     padding: 20px;
     width: 100%;
+<<<<<<< HEAD
     background-image: url(/logo.jpg);
+=======
+    background-color: #000f3f;
+>>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
 }
 
 
@@ -100,7 +104,11 @@ button:hover{
     overflow-x: hidden;    /*and also same story as the display: flex */  
     padding: 50px;
     width: 100%;
+<<<<<<< HEAD
     background-image: url(/logo.jpg);
+=======
+    background-color: #000f3f;
+>>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
     box-sizing: border-box;
     margin-bottom: 80px;
 }
@@ -126,11 +134,137 @@ button:hover{
 }
 
 footer {
-    display: block;
-    clear: both;
+    
     width: 100%;
-    background-color: var(--deepnavy);
+    background-color: #000f3f;
     padding: 20px;
     text-align: center;
     color: #fdf6e2;
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #001f54;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+    padding-top: 60px;
+    z-index: 1100;
+}
+
+.sidebar a {
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #003580;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+}
+/* Trying to make a djustments to the testimonail */
+.toPrimary{
+    display: block;
+    animation-name: toPrimary; 
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.toSecondary{
+    display: block;
+    animation-name: toSecondary; 
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+.toEnter{
+    display: block;
+    animation-name: toEnter; 
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes toPrimary{
+    from{
+        transform: translateX(90%);
+        opacity: 70%;
+    }
+    to{
+        transform: translateX(0%);
+        transform: scale(1.1);     
+    }
+    
+}
+@keyframes toSecondary {
+    from{
+        transform: translateX(0%);
+        transform: scale(1.1);
+    }
+    to{
+        transform: translateX(-90%);
+        opacity: 70%;
+    }
+    
+}
+@keyframes toEnter {
+    from{
+        transform: translateX(200%);
+    }
+    to{
+        transform: translateX(90%);
+        opacity: 70%;    
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+    display: none; 
+}
+
+.hamburger {
+    display: block; 
+    }
+
+.sidebar.active {
+    width: 250px; 
+    }
+
+}
+@media (max-width: 500px) {
+    .header{
+        margin-top: -15%;
+    }
+    .footer{
+        position: fixed;
+        bottom: 0;
+        width: 86%;
+    }
+    .footer p {
+        font-size: small;
+    }
+
 }

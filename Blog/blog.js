@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*const container = document.querySelector(".container");
 const item = document.querySelector(".item");
 const profileWidth = item[0].offsetWidth +40;
@@ -12,6 +13,9 @@ function moveContainer(){
 
 
 document.addEventListener('DOMContentLoaded', function() {
+=======
+/*document.addEventListener('DOMContentLoaded', function() {
+>>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
     const profileContainer = document.querySelector(".container");
 
     
@@ -72,8 +76,20 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
     scrollTestimonials();
+<<<<<<< HEAD
 });*/
 /*LUYANDA'S JS*/
+=======
+});
+
+function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("active");
+}*/
+
+
+
+
+>>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
 const members = document.querySelectorAll(".item");
 
 let itemsEnteringIndex = 2;
@@ -81,7 +97,11 @@ let itemsPrimaryIndex = 1;
 let itemsLeavingIndex = 0;
 
 let itemsIntervalID = null;
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
 document.addEventListener("DOMContentLoaded", membersCarousel());
 
 function membersCarousel(){ 
@@ -222,7 +242,11 @@ function nextMember(){
     startInterval();
 }
 
+<<<<<<< HEAD
 /*
+=======
+
+>>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
 // The testimonial code begins here
 
 
@@ -342,6 +366,7 @@ function nextTestimony(){
     
     startTestimonyInterval();
 }
+<<<<<<< HEAD
 */
 /*CODESSA'S JS*/
 
@@ -641,3 +666,5 @@ document.addEventListener('DOMContentLoaded', function() {
     closeTestimonial.addEventListener("click", () => testimonialModal.style.display = "none");
     window.addEventListener("click", e => { if (e.target === testimonialModal) testimonialModal.style.display = "none"; });
 });
+=======
+>>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
