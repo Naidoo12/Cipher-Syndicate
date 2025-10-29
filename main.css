@@ -102,7 +102,7 @@ nav ul li a:hover{
 
 @media (max-width: 900px) {
     
-    footer{
+    /* footer{
     position: absolute;
     bottom: 0;
     background: #000f3f;
@@ -111,7 +111,7 @@ nav ul li a:hover{
     text-align: center;
     color: white;
 
-    }
+    } */
 }
 
 @media (max-width: 400px) {
@@ -127,7 +127,7 @@ nav ul li a:hover{
     }
     
     
-    footer{
+    /* footer{
     position: absolute;
     bottom: 0;
     background: #000f3f;
@@ -135,7 +135,7 @@ nav ul li a:hover{
     width: 90%;
     text-align: center;
     color: white;
-    }
+    } */
     header {
     text-align: center;
     padding: 5% 0% 3%;
