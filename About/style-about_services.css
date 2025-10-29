@@ -132,6 +132,10 @@ main h1.m1{
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
+.performanceMetrics h2{
+  padding-bottom: 30px;
+  padding-left: 5px;
+}
 .metrics{
   min-width: 200px;
 }
