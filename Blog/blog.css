@@ -178,7 +178,7 @@ footer {
     color: white;
     cursor: pointer;
 }
-/* Trying to make a djustments to the testimonail */
+/* Trying to make adjustments to the testimonail */
 .toPrimary{
     display: block;
     animation-name: toPrimary; 
@@ -233,6 +233,16 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .footer{
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        font-size: 16px;
+        padding: 15px;
+    }
+    
     nav ul {
     display: none; 
 }

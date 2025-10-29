@@ -212,5 +212,37 @@ p{
     
 }
 
+@media (max-width: 768px){
+    .footer{
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .CP{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px), (min-width: 485px){
+    .footer{
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        font-size: 14px;
+        margin-bottom: 1px;
+        text-align: center;
+    }
+
+    .CP{
+        margin-bottom: 120px;
+    }
+}
 
 
