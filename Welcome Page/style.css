@@ -6,7 +6,6 @@
     min-height: 100%;
     object-fit: cover;
     z-index: -1; /* Keep it behind text */
-<<<<<<< HEAD
   }
 
 header{
@@ -20,22 +19,15 @@ header{
     padding: 20px;        
     background: transparent; 
     z-index: 10;
-=======
->>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
 }
 
 
 
 .CP{
-<<<<<<< HEAD
     padding-top: 100px;
     height: 72.5vh;
     display: flex;/*
     background-image: url('/Welcome page/images/hands1.jpg');*/
-=======
-    height: 74vh;
-    display: flex;
->>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -48,14 +40,9 @@ header{
 .CP h1{
     color: white;
     font-size: 60px;
-<<<<<<< HEAD
     margin-top: -70px;
     padding-top: 50px;
     padding-bottom: 20px;
-=======
-    margin-top: 0px;
-    padding-bottom: 30px;
->>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 

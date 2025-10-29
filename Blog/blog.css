@@ -50,11 +50,7 @@ nav ul li a {
     white-space: nowrap;
     padding: 20px;
     width: 100%;
-<<<<<<< HEAD
     background-image: url(/logo.jpg);
-=======
-    background-color: #000f3f;
->>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
 }
 
 
@@ -104,11 +100,7 @@ button:hover{
     overflow-x: hidden;    /*and also same story as the display: flex */  
     padding: 50px;
     width: 100%;
-<<<<<<< HEAD
     background-image: url(/logo.jpg);
-=======
-    background-color: #000f3f;
->>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
     box-sizing: border-box;
     margin-bottom: 80px;
 }

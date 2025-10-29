@@ -1,17 +1,11 @@
 body{ 
 }
-<<<<<<< HEAD
 
 main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
  
-=======
-h2{
-    padding-top: 25px;
-    padding-bottom: 20px;
->>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
 }
 .container{
     margin-top: 50px;
@@ -26,13 +20,7 @@ h2{
 .about{
     text-align: center;
     font-size: large;
-<<<<<<< HEAD
     background-color: rgba(145, 158, 167,0.9);
-=======
-    background-color: rgba(145, 158, 167,0.5);
-    height: 30vh;
-    width: 70%;
->>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
     border: black 1px solid;
     border-radius: 25px;
     padding: 40px 30px;
@@ -48,13 +36,7 @@ h2{
 .services{
     text-align: center;
     font-size: large;
-<<<<<<< HEAD
     background-color: rgba(145, 158, 167,0.9);
-=======
-    background-color: rgba(145, 158, 167,0.5);
-    height: 40vh;
-    width: 45%; 
->>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
     border: black 1px solid;
     border-radius: 20px; 
     padding: 30px;
@@ -83,14 +65,7 @@ h2{
     margin-bottom: 5px;
     text-align: center;
     font-size: large;
-<<<<<<< HEAD
     background-color: rgba(145, 158, 167,0.9);
-=======
-    background-color: rgba(145, 158, 167,0.5);
-    height: 40vh;
-    width: 45%;
-    border-radius: 50px;
->>>>>>> 09af2cf92c3f01c726880936da34d074f883cd6a
     border: black 1px solid;
     border-radius: 20px;
     padding: 30px;
