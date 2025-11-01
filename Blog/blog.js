@@ -389,7 +389,7 @@ document.addEventListener('DOMContentLoaded', function() {
             email: "thedeveloper98b@gmail.com",
             phone: "+27 67 922 4886",
             cv: "CVs/Brighton_CV.pdf",
-            image: "images/Images/The Developer.jpg",
+            image: "images/Images/the developer.jpg",
             testimonial: `
             <p>
             At the heart of Cipher Syndicate stands Mr. Brighton, known to many as The Developer ,  the visionary founder and chairperson whose passion for technology and people has shaped the very core of who we are.Cipher Syndicate began as his vision, a space where innovation, creativity, and strategy unite to build powerful digital solutions. Under his guidance, we’ve become more than just a tech startup; we’re a collective of young developers, designers, and thinkers driven to turn ideas into reality.
@@ -410,7 +410,7 @@ document.addEventListener('DOMContentLoaded', function() {
             email: "sambulosithole12@gmail.com",
             phone: "+27 69 469 3897",
             cv: "CVs/Sambulo_Sithole CV.pdf",
-            image: "images/Images/Silent_Server.jpg",
+            image: "images/Images/silent server.jpg",
             testimonial: `
             <p>
             Silent Server, the steady architect of order , calm, precise, and deeply committed to the Syndicate’s vision.Where others see chaos, Silent Server sees systems. His quiet intelligence and disciplined nature bring structure and balance to a fast-paced creative environment. Behind every project’s success, his fingerprints can be found , in the stability of the back-end, the efficiency of operations, and the accuracy of our financial foundation.
@@ -431,7 +431,7 @@ document.addEventListener('DOMContentLoaded', function() {
             email: "tiashennaidoo@gmail.com",
             phone: "+27 61 157 0961",
             cv: "CVs/CV-T.Naidoo.pdf",
-            image: "images/Images/Code01.jpg",
+            image: "images/Images/code01.jpg",
             testimonial: `
             <p>
             Every great vision needs a thinker who can turn ideas into strategy and innovation into structure. At Cipher Syndicate, that mind belongs to Tiashin Naidoo, known across the team as Code 01. 
@@ -459,7 +459,7 @@ document.addEventListener('DOMContentLoaded', function() {
             email: "ngcongothandolwami@gmail.com",
             phone: "+27 69 995 0039",
             cv: "CVs/thandolwamis cv.pdf",
-            image: "images/Images/Shadow_Byte.jpg",
+            image: "images/Images/shadow_byte.jpg",
             testimonial: `
             <p>
             In every great collective, there is someone who gives vision a voice and creativity a pulse , for Cipher Syndicate, that person is Thandolwami Mayeza, known as Shadow Byte. 
@@ -484,7 +484,7 @@ document.addEventListener('DOMContentLoaded', function() {
             email: "londiwehopea@gmail.com",
             phone: "+27 83 502 7012",
             cv: "CVs/CODESSA CV.pdf",
-            image: "images/Images/Codessa.jpg",
+            image: "images/Images/codessa.jpg",
             testimonial: `
             <p>
             Every thriving team needs a guiding hand  someone who ensures that vision, creativity, and innovation are not only pursued but also realized with precision. At Cipher Syndicate, that guiding force is Londiwe Afrikander, known to the team as Codessa. 
@@ -512,7 +512,7 @@ document.addEventListener('DOMContentLoaded', function() {
             email: "mkhwanaziluyanda043@gmail.com",
             phone: "+27 81 564 8360",
             cv: "CVs/CV_2025092819370472.pdf",
-            image: "images/Images/Binary_Bloom.jpg",
+            image: "images/Images/binary_bloom.jpg",
             testimonial: `
             <p>
             In a team where innovation thrives, organization and precision are just as essential as creativity. At Cipher Syndicate, Luyanda Mkhwanazi, known as Binary Bloom, embodies this balance. As Secretary and Front-End Developer, she ensures that the team’s projects are structured, documented, and executed with both efficiency and elegance.
@@ -565,7 +565,7 @@ document.addEventListener('DOMContentLoaded', function() {
             email: "Luyandagumede123@gmail.com",
             phone: "+27 63 031 2938",
             cv: "CVs/CV_of_Luyanda_Gumede.pdf",
-            image: "images/Images/Cache_Cat.jpg",
+            image: "images/Images/Cache Cat.jpg",
             testimonial: `
             <p>
             In every forward-thinking team, there is someone who bridges creativity, technology, and outreach  at Cipher Syndicate, that person is Luyanda Gumede, known as Cache Cat. 
