@@ -470,3 +470,76 @@ footer {
     padding: 10px;
     border-radius: 8px;
 }
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+
+    .container {
+        height: 370px; /* slightly shorter */
+        padding: 15px;
+    }
+
+
+    .item {
+        width: 180px; /* smaller cards */
+        margin: 15px 5px;
+        padding: 15px 10px 30px;
+        font-size: 0.75rem;
+    }
+
+    .left, .right {
+        height: 15%;
+        width: 5%;
+        margin: 2%;
+    }
+
+    .header {
+        padding: 60px 20px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        height: 320px; 
+        padding: 10px;
+    }
+
+    .item {
+        width: 140px;
+        margin: 10px 3px;
+        padding: 10px 5px 20px;
+        font-size: 0.75rem;
+    }
+
+    .image img.sigh {
+        width: 100px;
+        height: 100px;
+    }
+
+    .left, .right {
+        height: 20%;
+        width: 8%;
+        margin: 1%;
+        font-size: 1rem;
+    }
+
+    .header {
+        padding: 40px 10px 10px;
+        font-size: 1rem;
+    }
+
+    footer {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        width: 100%;
+        padding: 15px;
+        font-size: 0.8rem;
+    }
+}
