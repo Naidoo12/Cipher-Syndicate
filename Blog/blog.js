@@ -528,34 +528,6 @@ document.addEventListener('DOMContentLoaded', function() {
             </p>
             `
         },
-        databullet: {
-            name: "Reece Chetty",
-            code: "Data Bullet",
-            role: "Business Plan",
-            description: "Reece known as Data Bullet is the analytical backbone of backend operations, approaching coding challenges with precision and foresight. Beyond technical work, he contributes to strategic business planning, anticipating growth and scalability needs. His structured, thoughtful approach gives the team a steady foundation to build upon.",
-            specialization: "Back-end Developer",
-            email: "Reecechetty001@gmail.com",
-            phone: "+27 84 259 5958",
-            cv: "CVs/CV_of_Reece_chetty.pdf",
-            image: "images/Images/Data_Bullet.jpg",
-            testimonial: `
-            <p>
-            Every successful team needs a mind that can see both the details and the bigger picture. At Cipher Syndicate, that mind belongs to Reece Chetty, known to the team as Data Bullet. 
-            </p>
-            <p>
-            As Business Plan Lead and Back-End Developer, he ensures that every system, process, and project is not only functional but strategically structured for efficiency and long-term success.
-            </p>
-            <p>
-            Data Bullet combines analytical precision with technical expertise. His approach to problem-solving is methodical, thoughtful, and data-driven, ensuring that the Syndicate’s operations are scalable, reliable, and optimized. Whether he’s designing back-end systems or planning workflows, his contributions reflect a deep understanding of both technology and business strategy.
-            </p>
-            <p>
-            What sets him apart is his leadership by example. Data Bullet approaches every challenge with professionalism, punctuality, and sound judgment, inspiring confidence in those around him. He balances technical rigor with creativity, ensuring that innovation is always grounded in practicality.Beyond his skills, he brings a sense of calm determination and thoughtful mentorship to the team. Data Bullet helps the Syndicate operate with precision while fostering growth, learning, and collaboration.
-            </p>
-            <p>
-            Reece Chetty is more than a developer or strategist; he is the analytical backbone of Cipher Syndicate , a professional whose insight, discipline, and dedication enable the team to transform vision into actionable, lasting results.
-            </p>
-            `
-        },
         cachecat: {
             name: "Luyanda Gumede",
             code: "Cache Cat",
@@ -564,7 +536,7 @@ document.addEventListener('DOMContentLoaded', function() {
             specialization: "Front-end Developer",
             email: "Luyandagumede123@gmail.com",
             phone: "+27 63 031 2938",
-            cv: "CVs/CV_of_Luyanda_Gumede.pdf",
+            cv: "CVs/CV_2025110212510086.pdf",
             image: "images/Images/Cache Cat.jpg",
             testimonial: `
             <p>
@@ -581,6 +553,56 @@ document.addEventListener('DOMContentLoaded', function() {
             </p>
             `
         },
+        lyrabyte: {
+            name: "Zanele Mkhize",
+            code: "Lyra Byte",
+            role: "",
+            description: "Lyra Byte is a quiet light within Cipher Syndicate ,a gentle soul whose warmth and creativity bring calm to the storm of innovation. Her presence carries both grace and curiosity, blending thoughtful silence with bursts of energy when inspiration strikes. Beneath her soft tone lies a vibrant imagination and an eagerness that turns every challenge into art.",
+            specialization: "Front-end Developer",
+            email: "zaneleoluhlem@gmail.com",
+            phone: "+27 63 786 6372",
+            cv: "",
+            image: "images/Images/Lyra_byte.jpg",
+            testimonial: `
+            <p>
+            Lyra Byte embodies the beauty of balance, calm yet curious, gentle yet determined. In her, we see the kind of brilliance that doesn’t demand attention, but earns it through depth and authenticity. She brings warmth to the workspace, reminding us that technology isn’t only about logic — it’s also about heart.
+            </p>
+            <p>
+            Her quiet focus often says what words cannot. She listens deeply, observes carefully, and when she speaks, it’s with purpose. Every idea she shares carries sincerity, every effort reflects dedication. Lyra’s bubbly spark brings lightness to even the most intense projects, transforming collaboration into connection.
+            </p>
+            <p>
+            At Cipher Syndicate, she stands as proof that strength isn’t always loud ,sometimes, it moves softly, learning, adapting, and shining in its own rhythm. Lyra Byte’s journey is one of quiet impact ,steady, inspiring, and undeniably hers.
+            </p>
+            `
+            },
+            novapulse: {
+            name: "Zishaan Mansoor",
+            code: "Nova Pulse",
+            role: "",
+            description: "Nova Pulse is the creative technologist of Cipher Syndicate, a digital architect whose precision meets imagination. With a foundation in both gaming and web development, he bridges the artistry of interactivity with the discipline of structured design. His focus lies in crafting modern, minimalistic interfaces that don’t just function, but feel intuitive , where every pixel has purpose and every motion has intent.",
+            specialization: "Front-end Developer",
+            email: "zzmansoor@gmail.com",
+            phone: "+27 60 544 6674",
+            cv: "CVs/Zishaan_CV-1.pdf",
+            image: "images/Images/Nova_Pulse.jpg",
+            testimonial: `
+            <p>
+            Within Cipher Syndicate, Nova Pulse represents the perfect balance between logic and creativity ,a  front-end innovator who translates vision into interface and complexity into clarity.
+            </p>
+            <p>
+            He approaches development like a strategist: deliberate, focused, and relentlessly precise. His code isn’t rushed; it’s engineered ,optimized for elegance, performance, and usability. Nova Pulse has an instinctive understanding of how users think and interact, turning technical blueprints into seamless digital realities.
+            </p>
+            <p>
+            But Nova’s brilliance extends beyond syntax and design, it’s in his philosophy. He believes that true technology disappears into experience, that the best systems are the ones you never notice because they simply work. This principle defines his contribution to Cipher Syndicate.
+            </p>
+            <p>
+            In every project, his influence can be seen in the polish of the interface, the fluidity of the user journey, and the silent power of well-structured code. Nova Pulse reminds the team that innovation doesn’t always demand noise, sometimes, it hums quietly in the perfection of design, in the precision of function, and in the harmony between creativity and control.
+            </p>
+            <p>
+            He is not merely a developer; he is Cipher Syndicate’s Front-End Visionary , the pulse that gives technology its human touch and design its digital soul.
+            </p>
+            `
+            },
     };
 
     let activeMember = null;
