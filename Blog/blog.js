@@ -430,7 +430,7 @@ document.addEventListener('DOMContentLoaded', function() {
             specialization: "Back-end Developer",
             email: "tiashennaidoo@gmail.com",
             phone: "+27 61 157 0961",
-            cv: "CVs/CV-T.Naidoo.pdf",
+            cv: "CVs/CV - T.Naidoo .pdf",
             image: "images/Images/code01.jpg",
             testimonial: `
             <p>
@@ -561,7 +561,7 @@ document.addEventListener('DOMContentLoaded', function() {
             specialization: "Front-end Developer",
             email: "zaneleoluhlem@gmail.com",
             phone: "+27 63 786 6372",
-            cv: "",
+            cv: "CVs/CV_2025110213514841.pdf",
             image: "images/Images/Lyra_byte.jpg",
             testimonial: `
             <p>
