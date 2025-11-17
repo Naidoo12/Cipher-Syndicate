@@ -1,3 +1,4 @@
+console.log("this is called");
 const faqButtons = document.querySelectorAll(".faq-question");
 faqButtons.forEach(button => {
   button.addEventListener("click", () => {
